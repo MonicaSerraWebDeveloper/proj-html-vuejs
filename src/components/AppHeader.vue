@@ -69,7 +69,7 @@
     @use '../style/partials/variables' as *;
 
     .top-bar-header {
-        background-color: $darkblue;
+        background-color: #21333e;
         color: #fff;
         
         .row {
