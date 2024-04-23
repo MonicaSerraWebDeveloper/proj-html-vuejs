@@ -8,7 +8,7 @@
 
 <template>
 
-    <div class="container-projects">
+    <section class="container-projects">
         <div class="container">
             <div class="row">
                 <div class="title-container">
@@ -64,10 +64,9 @@
                         </div>
                     </div>
                 </div>
-               
             </div>
         </div>
-    </div>
+    </section>
 
 </template>
 

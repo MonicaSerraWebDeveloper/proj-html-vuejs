@@ -8,7 +8,7 @@
 
 <template>
 
-    <div class="container-about">
+    <section class="container-about">
         <div class="container">
             <div class="row">
                 <div class="col-50 padding-text">
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 </template>
 

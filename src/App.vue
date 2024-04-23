@@ -5,6 +5,7 @@
     import AppAbout from './components/AppAbout.vue'
     import AppProjects from './components/AppProjects.vue'
     import AppProcess from './components/AppProcess.vue'
+    import AppFeedback from './components/AppFeedback.vue'
 
     export default {
         components: {
@@ -12,7 +13,8 @@
             AppBulletPoint,
             AppAbout,
             AppProjects,
-            AppProcess
+            AppProcess,
+            AppFeedback
         }
     }
 
@@ -25,6 +27,7 @@
         <AppAbout></AppAbout>
         <AppProjects></AppProjects>
         <AppProcess></AppProcess>
+        <AppFeedback></AppFeedback>
     </main>
 
 </template>

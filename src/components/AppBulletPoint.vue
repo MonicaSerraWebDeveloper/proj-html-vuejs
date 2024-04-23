@@ -7,7 +7,7 @@
 </script>
 
 <template>
-    <div class="bullet-point-container">
+    <section class="bullet-point-container">
         <div class="container">
             <div class="row">
                 <div class="col-33">
@@ -31,10 +31,9 @@
                         <p>Achieving maximum impact and value from investiments in finance and supply chain</p>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
+    </section>
 
 </template>
 
