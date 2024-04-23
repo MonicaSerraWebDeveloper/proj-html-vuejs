@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="menu-container">
-            <div class="container">
+            <div class="container menu-navigation">
                 <div class="row gap text">
                     <div class="logo"> <span class="span-bg-logo">Nex</span>gen</div>
                     <nav>
@@ -122,6 +122,8 @@
                 z-index: 10;
             }
 
+            
+
             .logo {
                 flex-grow: 1;
                 font-size: 22px;
@@ -140,6 +142,7 @@
             }
 
             nav {
+
                 ul {
                 display: flex;
                 gap: 20px;
