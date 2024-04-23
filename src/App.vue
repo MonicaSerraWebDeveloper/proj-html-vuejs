@@ -1,10 +1,12 @@
 <script>
 
     import AppHeader from './components/AppHeader.vue'
+    import AppBulletPoint from './components/AppBulletPoint.vue'
 
     export default {
         components: {
-            AppHeader
+            AppHeader,
+            AppBulletPoint
         }
     }
 
@@ -12,6 +14,9 @@
 
 <template>
     <AppHeader></AppHeader>
+    <main>
+        <AppBulletPoint></AppBulletPoint>
+    </main>
 
 </template>
 

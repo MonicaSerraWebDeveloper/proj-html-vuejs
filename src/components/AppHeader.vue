@@ -159,11 +159,11 @@
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
-                
-                p {
-                    color: $white;
-                }
 
+                p {
+                    color: $silversand;
+                }
+            
                 .container-button {
                     display: flex;
                     gap: 10px;
