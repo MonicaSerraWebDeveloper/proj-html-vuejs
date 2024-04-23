@@ -125,7 +125,6 @@
 
             .right-side {
                 width: calc(30% - 25px);
-                border: 2px solid red; 
 
                 h3 {
                     color: $white;
