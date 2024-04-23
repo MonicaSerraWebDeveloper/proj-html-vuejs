@@ -41,6 +41,23 @@
                     <button class="button-primary">Get in touch</button>
                 </div>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-50">
+                        <h4>Human Resources</h4>
+                        <h1>Get More Productivity</h1>
+                        <p>Planning, recruitment and selection process and performance evaluation of employees.</p>
+                        <div class="container-button">
+                            <button class="button-primary">
+                                Get in touch
+                            </button>
+                            <button class="button-secondary-negative ">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -76,21 +93,41 @@
     }
 
     .menu-container {
+        position: relative;
         background-image: url('../assets/img/bg-4.jpg');
-        // height: 800px;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
         color: $white;
-        text-transform: uppercase;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: $woodsmoke;
+            opacity: 0.5;
+        }    
 
         .row {
             width: 100%;
             padding: 20px 0;
-            align-items: center;
+            align-items: center;     
+            z-index: 10;
+            
+            & > * {
+                z-index: 10;
+            }
 
             .logo {
                 flex-grow: 1;
                 font-size: 22px;
                 letter-spacing: 6px;
                 font-weight: 500;
+                text-transform: uppercase;
 
                 .span-bg-logo {
                     color: $primary-color;
@@ -102,14 +139,36 @@
                 }
             }
 
-            ul {
+            nav {
+                ul {
                 display: flex;
                 gap: 20px;
                 font-weight: 400;
+                text-transform: uppercase;
 
-                .active {
-                    color: $primary-color;
+                    .active {
+                        color: $primary-color;
+                    }
                 }
+
+            }
+
+            .col-50 {
+                width: calc(100% / 2);
+                padding: 100px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                
+                p {
+                    color: $white;
+                }
+
+                .container-button {
+                    display: flex;
+                    gap: 10px;
+                }
+
             }
         }
     }
