@@ -1,0 +1,37 @@
+@use './variables' as *;
+
+.button-primary {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    padding: 5px 16px;
+    text-transform: uppercase;
+    background-color: $primary-color;
+    color: $white;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-secondary {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-secondary-negative {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    cursor: pointer;
+}

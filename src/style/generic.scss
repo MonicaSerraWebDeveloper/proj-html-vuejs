@@ -1,3 +1,5 @@
+@use '../style/partials/variables' as *;
+
 /*-------------------
         RESET
 ---------------------*/
@@ -8,3 +10,88 @@
     box-sizing: border-box;
 }
 
+/*-------------------
+        GENERAL
+---------------------*/
+
+body {
+    font-family: "Kanit", sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    color: $white;
+}
+
+h2 {
+    font-size: 40px;
+    color: $darkblue;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: $darkblue;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+.span-title {
+    color: $primary-color;
+    background-color: $bg-color;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.span-title-negative {
+    color: $white;
+    background-color: $transparent-primary;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 200;
+    color: $darkblue;
+}
+
+/*-------------------
+        LAYOUT
+---------------------*/
+
+.container {
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-large {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid green;
+}
+
+/*-------------------
+        UTILITIES
+---------------------*/
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.gap {
+    gap: 20px;
+}

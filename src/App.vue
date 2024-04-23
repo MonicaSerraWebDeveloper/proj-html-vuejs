@@ -1,20 +1,25 @@
 <script>
 
-  export default {
+    import AppHeader from './components/AppHeader.vue'
 
-  }
+    export default {
+        components: {
+            AppHeader
+        }
+    }
 
 </script>
 
 <template>
-
-<h1>Productivity Site coming soon</h1>
+    <AppHeader></AppHeader>
 
 </template>
 
 <style lang="scss">
 
-@use './style/generic'
+    @use './style/generic';
+    @use './style/partials/variables' as *;
+
 
 
 </style>
