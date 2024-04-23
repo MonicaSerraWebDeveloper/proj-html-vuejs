@@ -61,6 +61,16 @@ p {
     color: $darkblue;
 }
 
+.text {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.text-small {
+    font-size: 14px;
+    font-weight: 200;
+}
+
 /*-------------------
         LAYOUT
 ---------------------*/
@@ -69,19 +79,17 @@ p {
     max-width: 990px;
     width: 100%;
     margin: 0 auto;
-    border: 2px solid red;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .container-large {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    border: 2px solid green;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*-------------------

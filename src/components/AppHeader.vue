@@ -10,26 +10,27 @@
 <template>
 
     <header>
-        <div class="container">
-            <div class="row">
-                <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, eligendi.</div>
+        <div class="top-bar-header">
+            <div class="container">
+                <div class="row text-small gap">
+                    <div class="grow"><i class="fa-solid fa-clock padding-r-l"></i> Open Hours: Mon - Sat - 9:00 - 18:00</div>
+                    <div><i class="fa-solid fa-phone padding-r-l"></i> +1(305) 1234-5678</div>
+                    <div><i class="fa-solid fa-envelope padding-r-l"></i> hello@example.com</div>
+                    <div class="container-social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
             </div>
-            <button class="button-primary">Get in touch</button>
-            <button class="button-secondary">Get in touch</button>
-        <h1>get in touch</h1>
-        <h2><span class="span-title">The</span> Company</h2>
-        <div class="dark">
-            <h2><span class="span-title-negative">The</span> Company</h2>
         </div>
-        
-        
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos reiciendis consequuntur maiores repellendus repudiandae pariatur, voluptatibus ipsam ullam quae sequi optio beatae voluptatum sed omnis delectus quos culpa odio? Fuga?</p>
+        <div class="menu-container">
+            <div class="container">
+                <div class="row">
+                    
+                </div>
+            </div>
         </div>
-        <div class="container-large">
-            <h3>get in touch</h3>
-            <h4>get in touch</h4>
-        </div>
-        
     </header>
 
 </template>
@@ -37,10 +38,29 @@
 <style scoped lang="scss">
 
     @use '../style/partials/buttons' as *;
+    @use '../style/partials/variables' as *;
 
-    .dark {
-        background-color: #000;
-        padding: 50px;
+    .top-bar-header {
+        background-color: $darkblue;
+        color: #fff;
+        
+        .row {
+            padding: 8px 0;
+            width: 100%;
+
+            .padding-r-l {
+                padding: 0 6px;
+            }
+
+            .grow {
+                flex-grow: 1;
+            }
+
+            .container-social {
+                display: flex;
+                gap: 26px;
+                align-items: center;
+            }
+        }
     }
-
 </style>
