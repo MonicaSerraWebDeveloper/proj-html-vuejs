@@ -6,6 +6,7 @@
     import AppProjects from './components/AppProjects.vue'
     import AppProcess from './components/AppProcess.vue'
     import AppFeedback from './components/AppFeedback.vue'
+    import AppFooter from './components/AppFooter.vue'
 
     export default {
         components: {
@@ -14,7 +15,8 @@
             AppAbout,
             AppProjects,
             AppProcess,
-            AppFeedback
+            AppFeedback,
+            AppFooter
         }
     }
 
@@ -29,7 +31,7 @@
         <AppProcess></AppProcess>
         <AppFeedback></AppFeedback>
     </main>
-
+    <AppFooter></AppFooter>
 </template>
 
 <style lang="scss">
