@@ -26,8 +26,19 @@
         </div>
         <div class="menu-container">
             <div class="container">
-                <div class="row">
-                    
+                <div class="row gap text">
+                    <div class="logo"> <span class="span-bg-logo">Nex</span>gen</div>
+                    <nav>
+                        <ul class="list-menu">
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>About</li></a>
+                            <a href="#"><li>Project</li></a>
+                            <a href="#"><li class="active">Process</li></a>
+                            <a href="#"><li>Testimonials</li></a>
+                        </ul>
+                    </nav>
+                    <i class="fa-regular fa-user"></i>
+                    <button class="button-primary">Get in touch</button>
                 </div>
             </div>
         </div>
@@ -63,4 +74,44 @@
             }
         }
     }
+
+    .menu-container {
+        background-image: url('../assets/img/bg-4.jpg');
+        // height: 800px;
+        color: $white;
+        text-transform: uppercase;
+
+        .row {
+            width: 100%;
+            padding: 20px 0;
+            align-items: center;
+
+            .logo {
+                flex-grow: 1;
+                font-size: 22px;
+                letter-spacing: 6px;
+                font-weight: 500;
+
+                .span-bg-logo {
+                    color: $primary-color;
+                    background-color: $transparent-primary;
+                    padding: 4px 0;
+                    padding-left: 24px;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+            }
+
+            ul {
+                display: flex;
+                gap: 20px;
+                font-weight: 400;
+
+                .active {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
 </style>
