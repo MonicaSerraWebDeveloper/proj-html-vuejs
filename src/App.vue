@@ -4,13 +4,15 @@
     import AppBulletPoint from './components/AppBulletPoint.vue'
     import AppAbout from './components/AppAbout.vue'
     import AppProjects from './components/AppProjects.vue'
+    import AppProcess from './components/AppProcess.vue'
 
     export default {
         components: {
             AppHeader,
             AppBulletPoint,
             AppAbout,
-            AppProjects
+            AppProjects,
+            AppProcess
         }
     }
 
@@ -22,6 +24,7 @@
         <AppBulletPoint></AppBulletPoint>
         <AppAbout></AppAbout>
         <AppProjects></AppProjects>
+        <AppProcess></AppProcess>
     </main>
 
 </template>
@@ -30,7 +33,5 @@
 
     @use './style/generic';
     @use './style/partials/variables' as *;
-
-
 
 </style>
