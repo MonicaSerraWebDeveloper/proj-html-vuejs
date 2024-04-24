@@ -17,13 +17,47 @@
             AppProcess,
             AppFeedback,
             AppFooter
+        },
+
+        data() {
+            return {
+                data: {
+                    menu: [
+                    {
+                        text: 'home',
+                        active: false
+                    },
+                    {
+                        text: 'about',
+                        active: false
+                    },
+                    {
+                        text: 'project',
+                        active: false
+                    },
+                    {
+                        text: 'process',
+                        active: true
+                    },
+                    {
+                        text: 'testimonials',
+                        active: false
+                    }
+                ],
+                contacts: {
+                    email: 'hello@example.com',
+                    phone: '+1(305) 1234-5678',
+                    address: 'Main Avenue, 987',
+                }
+                }
+            }
         }
     }
 
 </script>
 
 <template>
-    <AppHeader></AppHeader>
+    <AppHeader :listMenu="data"></AppHeader>
     <main>
         <AppBulletPoint></AppBulletPoint>
         <AppAbout></AppAbout>

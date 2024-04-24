@@ -1,7 +1,10 @@
 <script>
 
     export default {
-        name: 'AppHeader'
+        name: 'AppHeader',
+        props: {
+            listMenu: Object
+        }
     }
 
 
@@ -30,11 +33,11 @@
                     <div class="logo"> <span class="span-bg-logo">Nex</span>gen</div>
                     <nav>
                         <ul class="list-menu">
-                            <a href="#"><li>Home</li></a>
-                            <a href="#"><li>About</li></a>
-                            <a href="#"><li>Project</li></a>
-                            <a href="#"><li class="active">Process</li></a>
-                            <a href="#"><li>Testimonials</li></a>
+                            <a 
+                            v-for="list in listMenu.menu" 
+                            :class="{'active': list.active}" 
+                            href="#"><li>{{ list.text }}</li></a>
+    
                         </ul>
                     </nav>
                     <i class="fa-regular fa-user"></i>
@@ -148,6 +151,10 @@
                 gap: 20px;
                 font-weight: 400;
                 text-transform: uppercase;
+
+                li:hover {
+                    color: $primary-color;
+                }
 
                     .active {
                         color: $primary-color;
