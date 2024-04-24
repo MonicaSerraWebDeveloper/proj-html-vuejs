@@ -7,8 +7,10 @@
 </script>
 
 <template>
-
+    <!-- Section About  -->
     <section class="container-about">
+        <img class="dots-img-bottom" src="../assets/img/dots.png" alt="">
+        <img class="dots-img-top" src="../assets/img/dots.png" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-50 padding-text">
@@ -54,8 +56,28 @@
     .container-about {
         position: relative;
 
+        .dots-img-top {
+            position: absolute;
+            width: 100px;
+            bottom: 0;
+            right: 50%;
+            z-index: 99;
+            transform: translate(50%, 50%);
+        } 
+
+        .dots-img-bottom {
+                position: absolute;
+                width: 100px;
+                top: -40px;
+                right: 50%;
+                z-index: 99;
+                transform: translate(50%, 50%);
+            }
+
         .container {
             display: flex;
+
+           
 
             .padding-text > * {
                     padding: 12px 0;
