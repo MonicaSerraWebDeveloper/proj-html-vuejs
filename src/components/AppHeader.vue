@@ -2,6 +2,7 @@
 
     export default {
         name: 'AppHeader',
+        // Richiamiamo i dati dal genitore utilizzando le props
         props: {
             listMenu: Object
         }

@@ -21,6 +21,8 @@
 
         data() {
             return {
+
+                // Creaiamo i nostri data per popolare l'Header e il footer con un Object "Data" in cui sono contenute due chiavi "menu" che è un Array di Oggetti e "contacts" che è un Oggetto.
                 data: {
                     menu: [
                     {

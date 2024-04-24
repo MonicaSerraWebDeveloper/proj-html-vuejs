@@ -2,6 +2,7 @@
 
     export default {
         name: 'AppFooter',
+        // Richiamiamo i dati dal genitore utilizzando le props
         props: {
             listFooterData: Object
         }
