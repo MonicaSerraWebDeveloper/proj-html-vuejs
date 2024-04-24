@@ -1,7 +1,10 @@
 <script>
 
     export default {
-        name: 'AppFooter'
+        name: 'AppFooter',
+        props: {
+            listFooterData: Object
+        }
     }
 
 </script>
@@ -34,15 +37,15 @@
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                     <div class="info-container">
                         <i class="fa-solid fa-phone"></i>
-                        <span>+1(305) 1234-5678</span>
+                        <span>{{ listFooterData.phone }}</span>
                     </div>
                     <div class="info-container">
                         <i class="fa-solid fa-envelope"></i>
-                        <span>hello@example.com</span>
+                        <span>{{ listFooterData.email }}</span>
                     </div>
                     <div class="info-container">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>Main Avenue, 987</span>
+                        <span>{{ listFooterData.address }}</span>
                     </div>
                     <button class="button-secondary-negative">View map</button>
                 </div>

@@ -65,7 +65,7 @@
         <AppProcess></AppProcess>
         <AppFeedback></AppFeedback>
     </main>
-    <AppFooter></AppFooter>
+    <AppFooter :listFooterData="data.contacts"></AppFooter>
 </template>
 
 <style lang="scss">
