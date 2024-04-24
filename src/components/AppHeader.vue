@@ -17,8 +17,8 @@
             <div class="container">
                 <div class="row text-small gap">
                     <div class="grow"><i class="fa-solid fa-clock padding-r-l"></i> Open Hours: Mon - Sat - 9:00 - 18:00</div>
-                    <div><i class="fa-solid fa-phone padding-r-l"></i> +1(305) 1234-5678</div>
-                    <div><i class="fa-solid fa-envelope padding-r-l"></i> hello@example.com</div>
+                    <div><i class="fa-solid fa-phone padding-r-l"></i>{{ listMenu.contacts.phone }}</div>
+                    <div><i class="fa-solid fa-envelope padding-r-l"></i> {{ listMenu.contacts.email }}</div>
                     <div class="container-social">
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-twitter"></i>
