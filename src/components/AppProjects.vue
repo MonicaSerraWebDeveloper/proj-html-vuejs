@@ -102,6 +102,13 @@
 
                 li {
                     padding: 6px;
+
+                    &:hover {
+                        color: $white;
+                        background-color: $transparent-primary;
+                        border-radius: 4px;
+                        padding: 6px;
+                    }
                 }
 
                 .active {
